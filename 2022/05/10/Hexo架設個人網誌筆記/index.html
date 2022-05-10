@@ -20,17 +20,17 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.10.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="稍微紀錄一下Hexo指令的用法，哪天忘記了還有東西看w #Hexo 常用指令 ###新增文章 new 12345678910111213141516171819202122232425262728293031323334353637383940include&lt;bits&#x2F;stdc++.h&gt;#define Crbubble cin.tie(0); ios_base::sync_with_s">
+    <meta name="description" content="稍微紀錄一下Hexo常用指令用法，哪天忘記了還有東西看w">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo架設個人網誌筆記">
 <meta property="og:url" content="http://example.com/2022/05/10/Hexo%E6%9E%B6%E8%A8%AD%E5%80%8B%E4%BA%BA%E7%B6%B2%E8%AA%8C%E7%AD%86%E8%A8%98/index.html">
 <meta property="og:site_name" content="Crbubble 的隨筆記">
-<meta property="og:description" content="稍微紀錄一下Hexo指令的用法，哪天忘記了還有東西看w #Hexo 常用指令 ###新增文章 new 12345678910111213141516171819202122232425262728293031323334353637383940include&lt;bits&#x2F;stdc++.h&gt;#define Crbubble cin.tie(0); ios_base::sync_with_s">
+<meta property="og:description" content="稍微紀錄一下Hexo常用指令用法，哪天忘記了還有東西看w">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-05-10T05:38:07.000Z">
-<meta property="article:modified_time" content="2022-05-10T05:53:57.728Z">
+<meta property="article:modified_time" content="2022-05-10T07:34:13.617Z">
 <meta property="article:author" content="Crbubble">
-<meta property="article:tag" content="學習 紀錄">
+<meta property="article:tag" content="筆記">
 <meta name="twitter:card" content="summary">
 
 
@@ -96,7 +96,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -109,6 +109,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4"><span class="nav-number">1.</span> <span class="nav-text">Hexo 常用指令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B0%E5%A2%9E%E6%96%87%E7%AB%A0-new"><span class="nav-number">1.0.1.</span> <span class="nav-text">新增文章 new</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B8%85%E9%99%A4%E9%9D%9C%E6%85%8B%E6%AA%94%E6%A1%88-clean"><span class="nav-number">1.0.2.</span> <span class="nav-text">清除靜態檔案 clean</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%A2%E7%94%9F%E9%9D%9C%E6%85%8B%E6%AA%94%E6%A1%88-generate"><span class="nav-number">1.0.3.</span> <span class="nav-text">產生靜態檔案 generate</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%95%9F%E5%8B%95%E4%BC%BA%E6%9C%8D%E5%99%A8-server"><span class="nav-number">1.0.4.</span> <span class="nav-text">啟動伺服器 server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%88%E7%BD%B2%E6%AA%94%E6%A1%88-deploy"><span class="nav-number">1.0.5.</span> <span class="nav-text">佈署檔案 deploy</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%B0%A1%E6%98%93%E6%9B%B4%E6%96%B0%E7%B6%B2%E7%AB%99%E6%B5%81%E7%A8%8B"><span class="nav-number">2.</span> <span class="nav-text">簡易更新網站流程</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -121,7 +122,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -195,7 +196,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2022-05-10 13:38:07 / Modified: 13:53:57" itemprop="dateCreated datePublished" datetime="2022-05-10T13:38:07+08:00">2022-05-10</time>
+      <time title="Created: 2022-05-10 13:38:07 / Modified: 15:34:13" itemprop="dateCreated datePublished" datetime="2022-05-10T13:38:07+08:00">2022-05-10</time>
     </span>
 
   
@@ -208,11 +209,32 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>稍微紀錄一下Hexo指令的用法，哪天忘記了還有東西看w</p>
-<p>#Hexo 常用指令</p>
-<p>###新增文章 new</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">include&lt;bits/stdc++.h&gt;</span><br><span class="line"><span class="meta">#<span class="keyword">define</span> Crbubble cin.tie(0); ios_base::sync_with_stdio(false);</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ll long long</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line">ll dp[<span class="number">501</span>][<span class="number">501</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;    Crbubble</span><br><span class="line">    ll n,m,i,k,t;</span><br><span class="line">    ll cou,tp,tps;</span><br><span class="line">    string s,s2;</span><br><span class="line">    cin &gt;&gt; s &gt;&gt; s2;</span><br><span class="line">    ll len = s.<span class="built_in">length</span>();</span><br><span class="line">    ll len2 = s2.<span class="built_in">length</span>();</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;=len;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        dp[i][<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;=len2;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        dp[<span class="number">0</span>][i] = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    ll mx = - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;len;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(k=<span class="number">0</span>;k&lt;len2;k++)</span><br><span class="line">        &#123;</span><br><span class="line"></span><br><span class="line">            dp[i+<span class="number">1</span>][k+<span class="number">1</span>] = <span class="built_in">max</span>((ll)<span class="number">0</span>,<span class="built_in">max</span>(dp[i][k]+(s[i] == s2[k] ? <span class="number">8</span> : <span class="number">-5</span>),<span class="built_in">max</span>(dp[i][k+<span class="number">1</span>]<span class="number">-3</span>,dp[i+<span class="number">1</span>][k]<span class="number">-3</span>)));</span><br><span class="line">            <span class="keyword">if</span>(dp[i+<span class="number">1</span>][k+<span class="number">1</span>] &gt; mx) mx = dp[i+<span class="number">1</span>][k+<span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    cout &lt;&lt; mx &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+        <p>稍微紀錄一下Hexo常用指令用法，哪天忘記了還有東西看w</p>
+<span id="more"></span>
 
+<h1 id="Hexo-常用指令"><a href="#Hexo-常用指令" class="headerlink" title="Hexo 常用指令"></a>Hexo 常用指令</h1><h3 id="新增文章-new"><a href="#新增文章-new" class="headerlink" title="新增文章 new"></a>新增文章 new</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] title</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>若沒有輸入layout，會使用default_layout</li>
+<li>title包含空白需用引號括住，如<code>&quot;Cr bubble&quot;</code></li>
+</ul>
+<h3 id="清除靜態檔案-clean"><a href="#清除靜態檔案-clean" class="headerlink" title="清除靜態檔案 clean"></a>清除靜態檔案 clean</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+
+<p>此指令可清除已產生的靜態檔案與快取檔案，在發布新更新前可使用。</p>
+<h3 id="產生靜態檔案-generate"><a href="#產生靜態檔案-generate" class="headerlink" title="產生靜態檔案 generate"></a>產生靜態檔案 generate</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>產生靜態檔案，可簡寫為<code>hexo g</code></p>
+<h3 id="啟動伺服器-server"><a href="#啟動伺服器-server" class="headerlink" title="啟動伺服器 server"></a>啟動伺服器 server</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+
+<p>在本地端啟動Hexo伺服器，預覽網站更新後介面，可簡寫為<code>hexo s</code></p>
+<h3 id="佈署檔案-deploy"><a href="#佈署檔案-deploy" class="headerlink" title="佈署檔案 deploy"></a>佈署檔案 deploy</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>將檔案佈署到網站上，如Github</p>
+<h1 id="簡易更新網站流程"><a href="#簡易更新網站流程" class="headerlink" title="簡易更新網站流程"></a>簡易更新網站流程</h1><p>將各md檔修改好後，依序輸入以下指令即可更新網頁。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean      //清除檔案</span><br><span class="line">hexo generate   //產生檔案</span><br><span class="line">hexo deploy     //佈署檔案</span><br></pre></td></tr></table></figure>
+
+<p>可簡寫成</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -221,7 +243,7 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E5%AD%B8%E7%BF%92-%E7%B4%80%E9%8C%84/" rel="tag"># 學習 紀錄</a>
+              <a href="/tags/%E7%AD%86%E8%A8%98/" rel="tag"># 筆記</a>
           </div>
 
         
@@ -233,6 +255,9 @@
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/2022/05/10/Markdown%E8%AA%9E%E6%B3%95%E7%AD%86%E8%A8%98/" rel="next" title="Markdown語法筆記">
+                  Markdown語法筆記 <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
           </div>
     </footer>
