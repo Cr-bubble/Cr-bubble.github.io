@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
@@ -18,26 +18,26 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" integrity="sha256-jTIdiMuX/e3DGJUGwl3pKSxuc6YOuqtJYkM0bGQESA4=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.10.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"cr-bubble.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.10.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="如有錯誤請告知，感謝&gt;&lt;  在1970年代，分子生物學家Needleman及Wunsch 以動態程式設計技巧(dynamic programming)分析了胺基酸序列的相似程度 Global&#x2F;Local Alignment (透過排比來顯示兩序列的相似程度) 真(針)男人哈士奇演算法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Needleman Wunsch Algorithm">
-<meta property="og:url" content="http://example.com/2022/03/26/Needleman-Wunsch-Algorithm/index.html">
+<meta property="og:url" content="https://cr-bubble.github.io/2022/03/26/Needleman-Wunsch-Algorithm/index.html">
 <meta property="og:site_name" content="Crbubble 的隨筆記">
 <meta property="og:description" content="如有錯誤請告知，感謝&gt;&lt;  在1970年代，分子生物學家Needleman及Wunsch 以動態程式設計技巧(dynamic programming)分析了胺基酸序列的相似程度 Global&#x2F;Local Alignment (透過排比來顯示兩序列的相似程度) 真(針)男人哈士奇演算法">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2022-03-26T13:35:44.000Z">
 <meta property="article:modified_time" content="2022-04-04T09:20:45.070Z">
 <meta property="article:author" content="Crbubble">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/2022/03/26/Needleman-Wunsch-Algorithm/">
+<link rel="canonical" href="https://cr-bubble.github.io/2022/03/26/Needleman-Wunsch-Algorithm/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2022/03/26/Needleman-Wunsch-Algorithm/","path":"2022/03/26/Needleman-Wunsch-Algorithm/","title":"Needleman Wunsch Algorithm"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://cr-bubble.github.io/2022/03/26/Needleman-Wunsch-Algorithm/","path":"2022/03/26/Needleman-Wunsch-Algorithm/","title":"Needleman Wunsch Algorithm"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>Needleman Wunsch Algorithm | Crbubble 的隨筆記</title>
@@ -59,7 +59,7 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    <div class="toggle" aria-label="切換導航欄" role="button">
     </div>
   </div>
 
@@ -70,6 +70,7 @@
       <p class="site-title">Crbubble 的隨筆記</p>
       <i class="logo-line"></i>
     </a>
+      <p class="site-subtitle" itemprop="description">一顆想寫程式的泡泡噠>w<</p>
   </div>
 
   <div class="site-nav-right">
@@ -98,10 +99,10 @@
     <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
-          Table of Contents
+          文章目錄
         </li>
         <li class="sidebar-nav-overview">
-          Overview
+          本站概要
         </li>
       </ul>
 
@@ -115,19 +116,19 @@
         <div class="site-overview-wrap sidebar-panel">
           <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <p class="site-author-name" itemprop="name">Crbubble</p>
-  <div class="site-description" itemprop="description">一隻想寫程式的泡泡噠>w<</div>
+  <div class="site-description" itemprop="description">紀錄筆記心得</div>
 </div>
 <div class="site-state-wrap site-overview-item animated">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
           <span class="site-state-item-count">4</span>
-          <span class="site-state-item-name">posts</span>
+          <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
         <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">tags</span>
+        <span class="site-state-item-name">標籤</span>
       </div>
   </nav>
 </div>
@@ -144,7 +145,7 @@
     </header>
 
     
-  <div class="back-to-top" role="button" aria-label="Back to top">
+  <div class="back-to-top" role="button" aria-label="回到頂端">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
@@ -164,8 +165,8 @@
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/26/Needleman-Wunsch-Algorithm/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://cr-bubble.github.io/2022/03/26/Needleman-Wunsch-Algorithm/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -174,7 +175,7 @@
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Crbubble 的隨筆記">
-      <meta itemprop="description" content="一隻想寫程式的泡泡噠>w<">
+      <meta itemprop="description" content="紀錄筆記心得">
     </span>
     
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
@@ -192,16 +193,16 @@
       <span class="post-meta-item-icon">
         <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">Posted on</span>
+      <span class="post-meta-item-text">發表於</span>
 
-      <time title="Created: 2022-03-26 21:35:44" itemprop="dateCreated datePublished" datetime="2022-03-26T21:35:44+08:00">2022-03-26</time>
+      <time title="創建時間：2022-03-26 21:35:44" itemprop="dateCreated datePublished" datetime="2022-03-26T21:35:44+08:00">2022-03-26</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-04-04 17:20:45" itemprop="dateModified" datetime="2022-04-04T17:20:45+08:00">2022-04-04</time>
+      <span class="post-meta-item-text">更新於</span>
+      <time title="修改時間：2022-04-04 17:20:45" itemprop="dateModified" datetime="2022-04-04T17:20:45+08:00">2022-04-04</time>
     </span>
 
   
@@ -256,8 +257,8 @@
             <div class="post-nav-item">
             </div>
             <div class="post-nav-item">
-                <a href="/2022/03/26/IOIC-%E5%BF%83%E5%BE%97/" rel="next" title="IOIC 心得">
-                  IOIC 心得 <i class="fa fa-chevron-right"></i>
+                <a href="/2022/03/26/Markdown%E5%AF%AB%E4%BD%9C%E7%AD%86%E8%A8%98/" rel="next" title="Markdown寫作筆記">
+                  Markdown寫作筆記 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -285,7 +286,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Crbubble</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 強力驅動
   </div>
 
     </div>

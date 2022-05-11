@@ -20,28 +20,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"cr-bubble.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.10.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="網站架設差不多告一段落了…稍微紀錄一下Hexo常用指令用法，以防哪天忘記了還有東西看w">
+    <meta name="description" content="想用Markdown然後發現不會md的泡泡來學md語法了! 泡泡還在學習更多新的寫作方式，持續更新中…">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo架設個人網誌筆記">
-<meta property="og:url" content="https://cr-bubble.github.io/2022/05/10/Hexo%E6%9E%B6%E8%A8%AD%E5%80%8B%E4%BA%BA%E7%B6%B2%E8%AA%8C%E7%AD%86%E8%A8%98/index.html">
+<meta property="og:title" content="Markdown寫作筆記">
+<meta property="og:url" content="https://cr-bubble.github.io/2022/03/26/Markdown%E5%AF%AB%E4%BD%9C%E7%AD%86%E8%A8%98/index.html">
 <meta property="og:site_name" content="Crbubble 的隨筆記">
-<meta property="og:description" content="網站架設差不多告一段落了…稍微紀錄一下Hexo常用指令用法，以防哪天忘記了還有東西看w">
+<meta property="og:description" content="想用Markdown然後發現不會md的泡泡來學md語法了! 泡泡還在學習更多新的寫作方式，持續更新中…">
 <meta property="og:locale" content="zh_TW">
-<meta property="article:published_time" content="2022-05-10T05:38:07.000Z">
-<meta property="article:modified_time" content="2022-05-11T13:44:53.304Z">
+<meta property="article:published_time" content="2022-03-26T13:54:55.000Z">
+<meta property="article:modified_time" content="2022-05-11T02:39:54.146Z">
 <meta property="article:author" content="Crbubble">
 <meta property="article:tag" content="筆記">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://cr-bubble.github.io/2022/05/10/Hexo%E6%9E%B6%E8%A8%AD%E5%80%8B%E4%BA%BA%E7%B6%B2%E8%AA%8C%E7%AD%86%E8%A8%98/">
+<link rel="canonical" href="https://cr-bubble.github.io/2022/03/26/Markdown%E5%AF%AB%E4%BD%9C%E7%AD%86%E8%A8%98/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://cr-bubble.github.io/2022/05/10/Hexo%E6%9E%B6%E8%A8%AD%E5%80%8B%E4%BA%BA%E7%B6%B2%E8%AA%8C%E7%AD%86%E8%A8%98/","path":"2022/05/10/Hexo架設個人網誌筆記/","title":"Hexo架設個人網誌筆記"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://cr-bubble.github.io/2022/03/26/Markdown%E5%AF%AB%E4%BD%9C%E7%AD%86%E8%A8%98/","path":"2022/03/26/Markdown寫作筆記/","title":"Markdown寫作筆記"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Hexo架設個人網誌筆記 | Crbubble 的隨筆記</title>
+<title>Markdown寫作筆記 | Crbubble 的隨筆記</title>
   
 
 
@@ -110,7 +110,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4"><span class="nav-number">1.</span> <span class="nav-text">Hexo 常用指令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%B0%E5%A2%9E%E6%96%87%E7%AB%A0-new"><span class="nav-number">1.1.</span> <span class="nav-text">新增文章 new</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B8%85%E9%99%A4%E9%9D%9C%E6%85%8B%E6%AA%94%E6%A1%88-clean"><span class="nav-number">1.2.</span> <span class="nav-text">清除靜態檔案 clean</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%A2%E7%94%9F%E9%9D%9C%E6%85%8B%E6%AA%94%E6%A1%88-generate"><span class="nav-number">1.3.</span> <span class="nav-text">產生靜態檔案 generate</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%95%9F%E5%8B%95%E4%BC%BA%E6%9C%8D%E5%99%A8-server"><span class="nav-number">1.4.</span> <span class="nav-text">啟動伺服器 server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%88%E7%BD%B2%E6%AA%94%E6%A1%88-deploy"><span class="nav-number">1.5.</span> <span class="nav-text">佈署檔案 deploy</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B0%A1%E6%98%93%E6%9B%B4%E6%96%B0%E7%B6%B2%E7%AB%99%E6%B5%81%E7%A8%8B"><span class="nav-number">2.</span> <span class="nav-text">簡易更新網站流程</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown%E7%B0%A1%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">Markdown簡介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown%E5%B8%B8%E7%94%A8%E8%AA%9E%E6%B3%95"><span class="nav-number">2.</span> <span class="nav-text">Markdown常用語法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A8%99%E9%A1%8C"><span class="nav-number">2.1.</span> <span class="nav-text">標題</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A8%8B%E5%BC%8F%E7%A2%BC"><span class="nav-number">2.2.</span> <span class="nav-text">程式碼</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Spoiler"><span class="nav-number">2.3.</span> <span class="nav-text">Spoiler</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -167,7 +167,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://cr-bubble.github.io/2022/05/10/Hexo%E6%9E%B6%E8%A8%AD%E5%80%8B%E4%BA%BA%E7%B6%B2%E8%AA%8C%E7%AD%86%E8%A8%98/">
+    <link itemprop="mainEntityOfPage" href="https://cr-bubble.github.io/2022/03/26/Markdown%E5%AF%AB%E4%BD%9C%E7%AD%86%E8%A8%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -180,12 +180,12 @@
     </span>
     
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Hexo架設個人網誌筆記 | Crbubble 的隨筆記">
+      <meta itemprop="name" content="Markdown寫作筆記 | Crbubble 的隨筆記">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hexo架設個人網誌筆記
+          Markdown寫作筆記
         </h1>
 
         <div class="post-meta-container">
@@ -196,14 +196,14 @@
       </span>
       <span class="post-meta-item-text">發表於</span>
 
-      <time title="創建時間：2022-05-10 13:38:07" itemprop="dateCreated datePublished" datetime="2022-05-10T13:38:07+08:00">2022-05-10</time>
+      <time title="創建時間：2022-03-26 21:54:55" itemprop="dateCreated datePublished" datetime="2022-03-26T21:54:55+08:00">2022-03-26</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新於</span>
-      <time title="修改時間：2022-05-11 21:44:53" itemprop="dateModified" datetime="2022-05-11T21:44:53+08:00">2022-05-11</time>
+      <time title="修改時間：2022-05-11 10:39:54" itemprop="dateModified" datetime="2022-05-11T10:39:54+08:00">2022-05-11</time>
     </span>
 
   
@@ -216,32 +216,30 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>網站架設差不多告一段落了…<br>稍微紀錄一下Hexo常用指令用法，以防哪天忘記了還有東西看w</p>
+        <p>想用Markdown然後發現不會md的泡泡來學md語法了!</p>
+<p>泡泡還在學習更多新的寫作方式，持續更新中…</p>
 <span id="more"></span>
 
-<h2 id="Hexo-常用指令"><a href="#Hexo-常用指令" class="headerlink" title="Hexo 常用指令"></a>Hexo 常用指令</h2><h3 id="新增文章-new"><a href="#新增文章-new" class="headerlink" title="新增文章 new"></a>新增文章 new</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] title</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="Markdown簡介"><a href="#Markdown簡介" class="headerlink" title="Markdown簡介"></a>Markdown簡介</h2><p>Markdown使用易讀易寫的純文字格式，語法全由標點符號組成。Markdown是作為網路內容寫作的工具語言，因此看起來不會像HTML由許多標籤或指令組成，除此之外，Markdown也支援HTML的標籤，可以直接使用。</p>
+<h2 id="Markdown常用語法"><a href="#Markdown常用語法" class="headerlink" title="Markdown常用語法"></a>Markdown常用語法</h2><p>記錄我目前用到的語法，Markdown語法外可能有一些HTML的標籤…</p>
+<h3 id="標題"><a href="#標題" class="headerlink" title="標題"></a>標題</h3><p>Markdown支援Satext與Atx形式。</p>
+<p>Setext形式利用<code>=</code>作為最高階標題，<code>-</code>作為第二階標題。</p>
+<p>任何數量的<code>=</code>或<code>-</code>皆有效。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">H1 header</span><br><span class="line">=========</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">H2 header</span><br><span class="line">---------</span><br></pre></td></tr></table></figure>
 
-<ul>
-<li>若沒有輸入layout，會使用default_layout</li>
-<li>title包含空白需用引號括住，如<code>&quot;Cr bubble&quot;</code></li>
-</ul>
-<h3 id="清除靜態檔案-clean"><a href="#清除靜態檔案-clean" class="headerlink" title="清除靜態檔案 clean"></a>清除靜態檔案 clean</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+<p>Atx形式利用<code>#</code>符號，數量愈多代表愈小級標題</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#  H1 header</span><br><span class="line">##  H2 header</span><br><span class="line">###  H3 header</span><br><span class="line">####  H4 header</span><br><span class="line">#####  H5 header</span><br><span class="line">######  H6 header</span><br></pre></td></tr></table></figure>
 
-<p>此指令可清除已產生的靜態檔案與快取檔案，在發布新更新前可使用。</p>
-<h3 id="產生靜態檔案-generate"><a href="#產生靜態檔案-generate" class="headerlink" title="產生靜態檔案 generate"></a>產生靜態檔案 generate</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+<h3 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼"></a>程式碼</h3><p>Markdown支援程式碼區塊，可以把code舒服的放入文章。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">``` [language name]</span><br><span class="line">// your code</span><br><span class="line">```      </span><br></pre></td></tr></table></figure>
+<p>(如果要如上方在程式碼區塊打出反引號，記得在後面加一些字元or空白)</p>
+<h3 id="Spoiler"><a href="#Spoiler" class="headerlink" title="Spoiler"></a>Spoiler</h3><p>可以展開的夾層，如下所示<br>夾層內可正常使用Markdown與HTML書寫。</p>
+<details>
+    <summary>spoiler語法</summary>
+    <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;details&gt;</span><br><span class="line">	&lt;summary&gt; 詳細資料 &lt;/summary&gt;</span><br><span class="line">	</span><br><span class="line">	// 你想放的東西</span><br><span class="line">	</span><br><span class="line">&lt;/details&gt;</span><br></pre></td></tr></table></figure>
+</details>
 
-<p>產生靜態檔案，可簡寫為<code>hexo g</code></p>
-<h3 id="啟動伺服器-server"><a href="#啟動伺服器-server" class="headerlink" title="啟動伺服器 server"></a>啟動伺服器 server</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-
-<p>在本地端啟動Hexo伺服器，預覽網站更新後介面，可簡寫為<code>hexo s</code></p>
-<h3 id="佈署檔案-deploy"><a href="#佈署檔案-deploy" class="headerlink" title="佈署檔案 deploy"></a>佈署檔案 deploy</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>將檔案佈署到網站上，如Github</p>
-<h2 id="簡易更新網站流程"><a href="#簡易更新網站流程" class="headerlink" title="簡易更新網站流程"></a>簡易更新網站流程</h2><p>將各md檔修改好後，依序輸入以下指令即可更新網頁。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean      //清除檔案</span><br><span class="line">hexo generate   //產生檔案</span><br><span class="line">hexo deploy     //佈署檔案</span><br></pre></td></tr></table></figure>
-
-<p>可簡寫成</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -257,11 +255,14 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2022/03/26/IOIC-%E5%BF%83%E5%BE%97/" rel="prev" title="IOIC 心得">
-                  <i class="fa fa-chevron-left"></i> IOIC 心得
+                <a href="/2022/03/26/Needleman-Wunsch-Algorithm/" rel="prev" title="Needleman Wunsch Algorithm">
+                  <i class="fa fa-chevron-left"></i> Needleman Wunsch Algorithm
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/2022/03/26/IOIC-%E5%BF%83%E5%BE%97/" rel="next" title="IOIC 心得">
+                  IOIC 心得 <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
           </div>
     </footer>
